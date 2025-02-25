@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography in Web Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <style>
+        body, h1, h2, p, ol, ul, li, strong, code, footer {
+            font-family: 'Merienda', cursive;
+        }
+        body {
+            background-color: #f4f4f4;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #e67e22;
+        }
+        h2 {
+            color: #1abc9c;
+        }
+        p, li {
+            color: #34495e;
+        }
+        strong {
+            color: #e74c3c;
+        }
+        code {
+            color: #8e44ad;
+            background-color: #ecf0f1;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        footer {
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <h1>Creative Typography in Web Design</h1>
+    <p>Typography plays a key role in the design of any website. It sets the tone, enhances the user experience, and helps communicate the brand's identity. The choice of font can dramatically alter the perception of a website.</p>
+    <p>Here’s how to implement custom fonts effectively:</p>
+    <ol>
+        <li>Pick a unique font that complements the aesthetic of your site.</li>
+        <li>Obtain the font from a font provider such as Google Fonts or a custom vendor.</li>
+        <li>Integrate the font into your site using the <code>@font-face</code> CSS rule.</li>
+        <li>Apply the font to elements on your page using the <code>font-family</code> property in CSS.</li>
+    </ol>
+    <p>This page uses the 'Merienda' font, which has a playful, handwritten style that adds personality to the content.</p>
+    
+    <h2>The Impact of Custom Fonts</h2>
+    <p>Custom fonts are crucial for creating a visually distinctive brand identity. They enable designers to communicate more effectively by setting the right mood and making the website more engaging for visitors.</p>
+    
+    <h2>Alternative Font Delivery Methods</h2>
+    <p>Along with the <code>@font-face</code> rule, there are other ways to include fonts on your website:</p>
+    <ul>
+        <li><strong>Google Fonts:</strong> A free service offering a wide selection of open-source fonts for web use.</li>
+        <li><strong>Adobe Fonts:</strong> A paid service offering a premium library of fonts for a more polished look.</li>
+        <li><strong>Self-Hosting:</strong> For greater control and performance, you can host fonts directly on your own server.</li>
+    </ul>
+    
+    <h2>Conclusion</h2>
+    <p>Typography is a powerful tool in web design. By choosing the right fonts, you can shape the overall look and feel of your site, enhancing both its functionality and aesthetics.</p>
+    
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
