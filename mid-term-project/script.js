@@ -6,7 +6,7 @@ const storyData = {
       { text: "Go on a secret mission to Tatooine", next: "tatooine" },
       { text: "Stay and train with Master Yoda", next: "yoda" }
     ],
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Jedi_Temple.jpg"
+    image: "<img src="1.jpg" alt=\"Jedi Temple\">"
   },
   tatooine: {
     text: "You arrive on Tatooine. You find a mysterious Sith artifact in a cave.",
@@ -14,7 +14,7 @@ const storyData = {
       { text: "Use the artifact", next: "artifact_master" },
       { text: "Destroy it", next: "darkness" }
     ],
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Tatooine.jpg"
+    image: "<img src="2.jpg" alt=\"Tatooine\">"
   },
   yoda: {
     text: "Master Yoda begins your intense training. It is rigorous and enlightening.",
@@ -22,27 +22,27 @@ const storyData = {
       { text: "Continue and master the training", next: "jedi_master" },
       { text: "Leave to pursue forbidden knowledge", next: "banished" }
     ],
-    image: "https://upload.wikimedia.org/wikipedia/en/9/9b/Yoda_Empire_Strikes_Back.png"
+    image: "<img src="3.jpg" alt=\"Yoda Training\">"
   },
   artifact_master: {
     text: "You master the Sith artifact and gain power without falling. You are a balance of light and dark.",
     choices: [],
-    image: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Sith_Holocron.jpg"
+    image: "<img src="4.jpg" alt=\"Artifact Master\">"
   },
   darkness: {
     text: "The artifact corrupts you. You become a Sith Lord feared across the galaxy.",
     choices: [],
-    image: "https://upload.wikimedia.org/wikipedia/en/7/76/Darth_Vader.jpg"
+    image: "<img src="5.jpg" alt=\"Sith Lord\">"
   },
   jedi_master: {
     text: "Your dedication pays off. You become a Jedi Master and serve the Republic wisely.",
     choices: [],
-    image: "https://upload.wikimedia.org/wikipedia/en/0/01/Luke_Skywalker.png"
+    image: "<img src="6.jpg" alt=\"Jedi Master\">"
   },
   banished: {
     text: "You gain knowledge but are exiled. You live in solitude, studying ancient powers.",
     choices: [],
-    image: "https://upload.wikimedia.org/wikipedia/en/3/32/Mace_Windu.png"
+    image: "<img src="7.jpg" alt=\"Banished Jedi\">"
   },
   duel: {
     text: "You face Darth Vader. Your strength is tested in an epic duel.",
@@ -50,17 +50,17 @@ const storyData = {
       { text: "Defeat Vader", next: "victory" },
       { text: "Join Vader", next: "apprentice" }
     ],
-    image: "https://upload.wikimedia.org/wikipedia/commons/1/14/Lightsaber_Duel.jpg"
+    image: "<img src="8.jpg" alt=\"Lightsaber Duel\">"
   },
   victory: {
     text: "You defeat Vader and restore balance to the Force. The galaxy celebrates your heroism.",
     choices: [],
-    image: "https://upload.wikimedia.org/wikipedia/en/3/32/Darth_Vader.jpg"
+    image: "<img src="9.jpg" alt=\"Victory\">"
   },
   apprentice: {
     text: "Vader defeats you and turns you into his apprentice. The galaxy trembles.",
     choices: [],
-    image: "https://upload.wikimedia.org/wikipedia/en/e/e1/Darth_Maul.png"
+    image: "<img src="10.jpg" alt=\"Sith Apprentice\">"
   }
 };
 
@@ -79,7 +79,7 @@ function updatePage() {
 
   storyDiv.textContent = stage.text;
   choicesDiv.innerHTML = "";
-  imageDiv.innerHTML = `<img src="${stage.image}" alt="scene image">`;
+  imageDiv.innerHTML = stage.image;
 
   if (stage.choices.length === 0) {
     const restartBtn = document.createElement("button");
