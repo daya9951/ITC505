@@ -6,7 +6,7 @@ const storyData = {
       { text: "Go on a secret mission to Tatooine", next: "tatooine" },
       { text: "Stay and train with Master Yoda", next: "yoda" }
     ],
-    image: "https://upload.wikimedia.org/wikipedia/en/9/9b/Yoda_Empire_Strikes_Back.png"
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Jedi_Temple.jpg"
   },
   tatooine: {
     text: "You arrive on Tatooine. You find a mysterious Sith artifact in a cave.",
@@ -14,7 +14,7 @@ const storyData = {
       { text: "Use the artifact", next: "artifact_master" },
       { text: "Destroy it", next: "darkness" }
     ],
-    image: "https://upload.wikimedia.org/wikipedia/en/8/8d/Darth_Revan_EA.png"
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Tatooine.jpg"
   },
   yoda: {
     text: "Master Yoda begins your intense training. It is rigorous and enlightening.",
@@ -27,12 +27,12 @@ const storyData = {
   artifact_master: {
     text: "You master the Sith artifact and gain power without falling. You are a balance of light and dark.",
     choices: [],
-    image: "https://upload.wikimedia.org/wikipedia/en/8/8d/Darth_Revan_EA.png"
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Sith_Holocron.jpg"
   },
   darkness: {
     text: "The artifact corrupts you. You become a Sith Lord feared across the galaxy.",
     choices: [],
-    image: "https://upload.wikimedia.org/wikipedia/en/f/f2/Kylo_Ren_Star_Wars.png"
+    image: "https://upload.wikimedia.org/wikipedia/en/7/76/Darth_Vader.jpg"
   },
   jedi_master: {
     text: "Your dedication pays off. You become a Jedi Master and serve the Republic wisely.",
@@ -50,7 +50,7 @@ const storyData = {
       { text: "Defeat Vader", next: "victory" },
       { text: "Join Vader", next: "apprentice" }
     ],
-    image: "https://upload.wikimedia.org/wikipedia/en/3/32/Darth_Vader.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/14/Lightsaber_Duel.jpg"
   },
   victory: {
     text: "You defeat Vader and restore balance to the Force. The galaxy celebrates your heroism.",
